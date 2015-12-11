@@ -1,31 +1,46 @@
+@import "palette";
 @import "colors";
 
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: @very-light-gray;
-@syntax-cursor-color: white;
-@syntax-selection-color: lighten(@dark-gray, 10%);
-@syntax-background-color: @very-dark-gray;
+@syntax-text-color: @color-bule-0;
+@syntax-cursor-color: @color-bule-3;
+@syntax-selection-color: @color-ivory-4;
+@syntax-background-color: @color-ivory-2;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
+@syntax-wrap-guide-color: @color-bule-3;
+@syntax-indent-guide-color: @color-bule-4;
+@syntax-invisible-character-color: @color-bule-4;
 
 // For find and replace markers
-@syntax-result-marker-color: @light-gray;
+@syntax-result-marker-color: @color-bule-0;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
+@syntax-gutter-text-color: @color-gray-1;
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @dark-gray;
-@syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-background-color: @color-gray-3;
+@syntax-gutter-background-color-selected: @color-gray-4;
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
+@syntax-color-renamed: @color-bule-2;
+@syntax-color-added: @color-lightgreen-2;
+@syntax-color-modified: @color-red-2;
+@syntax-color-removed: @color-red-4;
+
+// For language entity colors
+@syntax-color-variable: @color-purple-2;
+@syntax-color-constant: @color-purple-3;
+@syntax-color-property: @color-gray-2;
+@syntax-color-value: @syntax-color-constant;
+@syntax-color-function: @color-red-1;
+@syntax-color-method: @syntax-color-function;
+@syntax-color-class: @color-gray-4;
+@syntax-color-keyword: #222;
+@syntax-color-tag: @color-purple-3;
+@syntax-color-attribute: #458;
+@syntax-color-import: @syntax-color-keyword;
+@syntax-color-snippet: @syntax-color-constant;
